@@ -8,14 +8,3 @@
  */
 
 rootProject.name = 'cicd-pipeline-train-schedule-jenkins'
-this.repo = this.project.repositories.ivy {
-    url distUrl
-    layout 'pattern', {
-        artifact 'v[revision]/[artifact](-v[revision]-[classifier]).[ext]'
-        ivy 'v[revision]/ivy.xml'
-    }
-    metadataSources {
-        ivyDescriptor()
-        artifact()
-    }
-}
